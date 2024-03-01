@@ -1,6 +1,11 @@
+import React from 'react'
 import { Title } from './SectionTitle.styles.ts'
 
-const SectionTitle = ({ children }) => {
+interface SectionTitleProps {
+  children: React.ReactNode
+}
+
+const SectionTitle = ({ children }: SectionTitleProps) => {
   return <Title>{ children }</Title>
 }
 

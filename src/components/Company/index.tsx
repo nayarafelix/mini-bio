@@ -1,5 +1,13 @@
+import React from "react"
 import { CompanyArea, CompanyName,  CompanyTime } from './Company.styles'
-const Company = ({ name, time, children }: { name: string, time?: string }) => {
+
+interface CompanyProps {
+  name: string
+  time?: string
+  children: React.ReactNode
+}
+
+const Company = ({ name, time, children }: CompanyProps) => {
   return (
     <>
       <CompanyArea>

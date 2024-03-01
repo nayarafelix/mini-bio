@@ -1,6 +1,11 @@
+import React from "react"
 import { SectionAreaStyled } from './SectionArea.styles'
 
-const SectionArea = ({ children }) => {
+interface SectionAreaProps {
+  children: React.ReactNode
+}
+
+const SectionArea = ({ children }: SectionAreaProps) => {
   return (
       <SectionAreaStyled>{ children }</SectionAreaStyled>
   )

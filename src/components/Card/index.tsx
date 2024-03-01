@@ -1,6 +1,13 @@
+import React from "react"
 import { CardArea, Area, Position, Period, Description } from './Card.styles'
 
-const Card = ({ position, period, children }) => {
+interface CardProps {
+  position: string
+  period: string
+  children: React.ReactNode
+}
+
+const Card = ({ position, period, children }: CardProps) => {
   return (
       <CardArea>
         <Area>
